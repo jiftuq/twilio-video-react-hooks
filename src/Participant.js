@@ -4,7 +4,7 @@ import{ LocalVideoTrack } from 'twilio-video';
 const Participant = ({ participant }) => {
   const [videoTracks, setVideoTracks] = useState([]);
   const [audioTracks, setAudioTracks] = useState([]);
-  var [screenTracks, setScreenTracks] = useState([]);
+  const [screenTracks, setScreenTracks] = useState([]);
 
   const screenStream = navigator.mediaDevices.getDisplayMedia();
   const track = screenStream.getTracks()[0];
